@@ -40,6 +40,12 @@ class App extends Component {
       })
       return
     }
+    if(x == 0){
+      this.setState({
+        errorMessage: "invalid number"
+      })
+      return
+    }
     if(x > 90){
       this.setState({
         errorMessage: "maximum number is 90"
